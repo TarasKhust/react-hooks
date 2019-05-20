@@ -6,7 +6,8 @@
     "format": "prettier \"src/**/*.{js,css}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "main": "node $NODE_DEBUG_OPTION src/App.js",
-    "dev": "parcel src/index.html --open"
+    "dev": "parcel src/index.html --open",
+    "dev:mock": " cross-env PET_MOCK=mock parcel src/index.html"
   },
   "devDependencies": {
     "prettier": "^1.17.1",
@@ -19,8 +20,20 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
-    "parcel": "^1.12.3"
+    "parcel": "^1.12.3",
+    "cross-env": "^5.2.0"
   },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Firefox versions",
+    "last 2 FirefoxAndroid versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions",
+    "last 2 OperaMobile versions"
+  ],
   "dependencies": {
     "@frontendmasters/pet": "^1.0.3"
   }
